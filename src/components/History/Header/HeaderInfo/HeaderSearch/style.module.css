@@ -1,0 +1,153 @@
+.header-search-block {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.header-search-block--active {
+  width: 30%;
+}
+.header-search-block input {
+  display: block;
+  outline: none;
+  border: none;
+  padding: 15px 40px 15px 10px;
+  background-color: #07528e;
+  color: #4bf5fd;
+  width: 100%;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.header-search-block input::placeholder {
+  color: #4bf5fd;
+}
+
+.search-button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 27px;
+  z-index: 3;
+}
+
+.search-button--no-active {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-button--active {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-search-block:hover .search-path {
+  fill: #4bf5fd;
+}
+
+.search-button:hover .search-path--active {
+  fill: white;
+}
+
+.header-search-block:hover .search-text {
+  color: #4bf5fd;
+}
+
+.search-button svg {
+  width: 25px;
+  height: 25px;
+}
+
+.search-path {
+  fill: white;
+}
+
+.search-path--active {
+  fill: #4bf5fd;
+}
+
+.search-text {
+  color: white;
+  font-weight: 500;
+  margin-left: 35px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.toggle-block button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #717374;
+  font-size: 20px;
+}
+.header-name-block {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  flex: 1;
+  justify-content: center;
+}
+
+.header-name-online {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #57d062;
+  margin-left: 10px;
+}
+.toogls {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+.toggle-theme {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #717374;
+  font-size: 20px;
+}
+.input-block button {
+  background-color: rgba(224, 224, 224, 0.77);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #3c3f41;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: 100ms;
+}
+.input-block button:hover {
+  transform: scale(1.1);
+}
+
+/** darkTheme **/
+
+.search-active-exit,
+.search-active-enter {
+  transform: scale(1.2);
+  transition: 200ms;
+}
+
+.search-active-enter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1.2);
+  transition: 200ms;
+}

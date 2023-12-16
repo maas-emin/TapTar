@@ -1,0 +1,86 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.credibility {
+  margin-top: 93px;
+  margin-bottom: 111px;
+}
+
+.credibility__title {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 22px;
+}
+
+.credibility__block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -17px;
+}
+
+.credibility__tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  background: #4686cc;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.05s ease-in;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  margin-bottom: 20px;
+  margin-left: 17px;
+}
+
+.credibility__tag p {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+  margin-right: 24px;
+}
+
+.credibility__tag:hover {
+  background-color: #bed1e6;
+  transition: 0.05s ease-in;
+}
+
+.checkCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.circleInner {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #0fb800;
+  display: block;
+}
+
+.circleInner--active {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  display: block;
+}

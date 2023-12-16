@@ -1,0 +1,88 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+.loader__card {
+  width: 350px;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader__box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border: 2px dashed #9e9e9e;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 40;
+}
+
+.loader__title {
+  font-family: GothamRegular;
+  color: #bed1e6;
+  font-weight: 500;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.loader__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.loader__dots span {
+  display: block;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.loader__box span:not(:first-child) {
+  margin-left: 10px;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(5px);
+  }
+}
+
+.loader__dots span:nth-child(1) {
+  background-color: #bed1e6;
+  animation: move 2s linear infinite;
+  animation-delay: 0.1s;
+}
+
+.loader__dots span:nth-child(2) {
+  background-color: #bed1e6;
+  animation: move 2s linear infinite;
+  animation-delay: 0.3s;
+}
+
+.loader__dots span:nth-child(3) {
+  background-color: #bed1e6;
+  animation: move 2s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.loader__dots span:nth-child(4) {
+  background-color: #bed1e6;
+  animation: move 2s linear infinite;
+  animation-delay: 0.7s;
+}

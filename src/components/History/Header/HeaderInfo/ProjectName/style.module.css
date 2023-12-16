@@ -1,0 +1,44 @@
+@font-face {
+  font-family: GothamLight; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_light.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoMain {
+  width: 23px;
+  height: 85px;
+  margin-right: 18px;
+}
+
+.logoTitle svg {
+  width: 156px;
+  height: 45px;
+}
+
+.logoSubtitle {
+  font-size: 10px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: GothamLight;
+}
+
+.name__logo {
+  color: #fff;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.name__text {
+  color: #fff;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}

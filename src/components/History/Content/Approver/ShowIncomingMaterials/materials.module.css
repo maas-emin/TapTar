@@ -1,0 +1,67 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.materials {
+  width: 1070px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.files__header {
+  display: flex;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.files__title {
+  text-transform: uppercase;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 21px;
+  color: #4686cc;
+  margin-right: 10px;
+}
+
+.file__count {
+  text-transform: uppercase;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 21px;
+  color: #4686cc;
+}
+
+.files-content {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -45px;
+  margin-left: -45px;
+}
+
+@media only screen and (min-width: 2000px) {
+  .materials {
+    width: 1480px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  .materials {
+    width: 1770px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  .materials {
+    width: 490px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,46 @@
+@font-face {
+  font-family: GothamLight; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_light.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+.form__name {
+  padding-bottom: 35px;
+}
+
+.form__title {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: #4686cc;
+  line-height: 21px;
+}
+.form__input-name {
+  border-radius: 7px;
+  padding: 15px 10px;
+  width: 672px;
+  height: 35px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+  border: none;
+}
+
+.form__input-name:focus {
+  outline: 1px solid rgba(159, 168, 248, 0.7);
+  border-radius: 0;
+}
+
+.form__input-name::placeholder {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #adadad;
+}

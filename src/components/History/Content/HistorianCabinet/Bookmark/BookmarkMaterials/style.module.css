@@ -1,0 +1,199 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.files__header {
+  margin-bottom: 60px;
+}
+
+.files__title {
+  text-transform: uppercase;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 21px;
+  color: #4686cc;
+}
+
+/* Материал */
+.materials {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+.materialsContainer {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -45px;
+  margin-left: -45px;
+}
+
+.material {
+  position: relative;
+  width: 100%;
+  padding-right: 45px;
+  padding-left: 45px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-bottom: 25px;
+}
+
+.materialBlock {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 14px 18px;
+}
+
+.materialBlock:hover {
+  background-color: rgba(190, 209, 230, 0.3);
+  transition: 0.05s ease;
+}
+
+.materialBlock:hover .logo__path {
+  fill: #ffffff94;
+  transition: 0.05s ease;
+}
+
+.materialBlock:hover .material__logo img {
+  opacity: 0.7;
+  transition: 0.05s ease;
+}
+
+.materialBlock:hover .material__status {
+  color: #ffffff94;
+  transition: 0.05s ease;
+}
+
+.materialBlock:hover .material__date {
+  opacity: 0.7;
+  transition: 0.05s ease;
+}
+
+.materialBlock:hover .logo__path {
+  fill: #bed1e6;
+  stroke: #bed1e6;
+  transition: 0.05s ease;
+}
+
+.material__name {
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 17px;
+  color: #7d7d7d;
+}
+
+.material__date {
+  margin-top: 6px;
+  transition: 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.date__time {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #7d7d7d;
+}
+
+.infoBlock {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.file {
+  display: flex;
+  align-items: center;
+}
+
+.file:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.fileIcon {
+  width: 17px;
+  height: 14px;
+  margin-right: 12px;
+}
+
+.fileCount {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #7d7d7d;
+}
+
+.fileIcon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.material__logo {
+  width: 96px;
+  height: 69px;
+  margin-right: 20px;
+}
+
+.material__logo svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: 0.05s ease;
+}
+
+.logo__path {
+  fill: rgba(125, 125, 125, 0.1);
+  stroke: rgba(125, 125, 125, 0.1);
+  transition: 0.05s ease;
+}
+
+@media only screen and (min-width: 2000px) {
+  .materials {
+    width: 1480px;
+    margin: 0 auto;
+  }
+
+  .material {
+    flex: 0 0 33.333333%;
+    max-width: 33.33333%;
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  .materials {
+    width: 1770px;
+    margin: 0 auto;
+  }
+
+  .material {
+    flex: 0 0 33.333333%;
+    max-width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  .materials {
+    width: 490px;
+    margin: 0 auto;
+  }
+  .material {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

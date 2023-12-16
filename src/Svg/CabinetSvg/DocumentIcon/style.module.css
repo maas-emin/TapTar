@@ -1,0 +1,33 @@
+.cabinetCard {
+  display: block;
+  width: 187px;
+  height: 165px;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.materialCard {
+  display: block;
+  width: 72px;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+@media only screen and (max-width: 1100px) {
+  .cabinetCard {
+    display: block;
+    width: 100px;
+    height: 85px;
+    shape-rendering: geometricPrecision;
+    text-rendering: geometricPrecision;
+    image-rendering: optimizeQuality;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+  }
+}

@@ -1,0 +1,208 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.main {
+  width: 1070px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.files__header {
+  margin-bottom: 60px;
+}
+
+.files__title {
+  text-transform: uppercase;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 21px;
+  color: #4686cc;
+}
+
+.file__count {
+  margin-left: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #07528e;
+}
+
+.files-content {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -23px;
+  margin-left: -23px;
+}
+
+/* карточка */
+.block {
+  margin-bottom: 25px;
+  position: relative;
+  width: 100%;
+  padding-right: 23px;
+  padding-left: 23px;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.file {
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.file__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
+.file__item:hover .tasksTitle {
+  transform: translateY(0);
+  transition: 0.4s ease-in;
+}
+
+.file__item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.file__itemSvg {
+  width: 187px;
+  height: 165px;
+  display: block;
+  margin-left: 90px;
+}
+
+.name {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  color: #000;
+  margin-top: 24px;
+}
+
+.tasksIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90px;
+  height: 250px;
+  z-index: 4;
+  background-color: #bed1e6;
+  border-radius: 16px;
+  transition: 0.4s ease-in;
+}
+
+.tasks__file {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+}
+
+.tasks__file:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.tasks__img {
+  display: block;
+  width: 35px;
+  height: 36px;
+}
+
+.tasks__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tasksTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  padding-left: 104px;
+  background-color: rgba(190, 209, 230, 0.8);
+  border-radius: 16px;
+  transition: 0.4s ease-in;
+}
+
+.tasks__title--block {
+  display: flex;
+  align-items: center;
+  height: 36px;
+}
+
+.tasks__text {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 2000px) {
+  .main {
+    width: 1480px;
+    margin: 0 auto;
+  }
+
+  .block {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  .main {
+    width: 1770px;
+    margin: 0 auto;
+  }
+
+  .block {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  .main {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .block {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}

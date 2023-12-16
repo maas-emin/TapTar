@@ -1,0 +1,48 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+.message {
+  padding-top: 45px;
+}
+
+.add__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  background-color: #bed1e6;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  transition: 0.3s ease-in;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  padding: 10px 11px;
+  transition: 0.05s all ease;
+  outline: none;
+  border: none;
+  z-index: 2;
+}
+
+.add__btn:hover {
+  background-color: #4686cc;
+  transition: 0.05s all ease;
+}
+
+.add__btn p {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 13px;
+  color: #ffffff;
+  margin-left: 34px;
+}
+
+.svg {
+  width: 27px;
+  height: 28px;
+}

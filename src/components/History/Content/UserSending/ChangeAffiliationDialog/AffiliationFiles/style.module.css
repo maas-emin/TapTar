@@ -1,0 +1,124 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.flexContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.groupTitle {
+  display: flex;
+  align-items: center;
+  margin: 0 0 45px 15px;
+}
+
+.groupTitleIcon {
+  width: 28px;
+  height: 35px;
+}
+
+.groupTitleText {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 21px;
+  color: #000;
+  margin-left: 16px;
+}
+
+.block {
+  position: relative;
+  width: 100%;
+  margin: 15px 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.block.audio {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.block.document {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s linear;
+  z-index: 1;
+}
+
+.cardFile {
+  width: 100%;
+  height: 184px;
+  border-radius: 15px;
+  display: flex;
+}
+
+.cardFile.audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135px;
+}
+.cardFile.document {
+  padding: 50px;
+}
+
+.card img {
+  border-radius: 15px;
+  display: block;
+  image-rendering: pixelated;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+
+.groupLogo {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+  .block {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .block.audio {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+  .block.document {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .block {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .block.audio {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .block.document {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}

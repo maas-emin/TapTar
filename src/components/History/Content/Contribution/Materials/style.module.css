@@ -1,0 +1,237 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+/* Материал */
+.materials {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+.material {
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  transition: 0.05s ease;
+}
+
+.material:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.material__logo {
+  height: 100%;
+  width: 90px;
+  background: rgba(70, 134, 204, 0.3);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.material__logo img {
+  width: 31px;
+  height: 45px;
+  display: block;
+  transition: 0.05s ease;
+}
+
+.logo__path {
+  fill: #fff;
+  transition: 0.05s ease;
+}
+.material__name {
+  height: 100%;
+  display: flex;
+  padding-left: 39px;
+  text-transform: uppercase;
+  align-items: center;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 17px;
+  color: #7d7d7d;
+}
+
+.infoBlock {
+  position: relative;
+  z-index: 1;
+  padding: 22px 57px 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(70, 134, 204, 0.3);
+  border-radius: 20px;
+  margin-left: auto;
+}
+
+.info__circle {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  right: 31px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ff0000;
+  border: 0.5px solid #ffffff;
+}
+
+.material__date {
+  margin-top: 6px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.date_title {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  text-align: center;
+  color: #4686cc;
+}
+
+.date__time {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  text-align: center;
+  color: #4686cc;
+  margin-left: 3px;
+}
+
+.material__status {
+  color: white;
+  transition: 0.3s ease;
+}
+
+.status__title {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  padding-bottom: 2px;
+}
+.status__variant {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.processing {
+  background-color: #d7ce0b;
+}
+
+.processed {
+  background-color: #04c800;
+}
+
+@media only screen and (max-width: 1370px) {
+  .materials {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .material__logo img {
+    width: 26px;
+    height: 39px;
+  }
+  .material__name {
+    padding-left: 29px;
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .status__title {
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 2px;
+  }
+  .date_title {
+    font-size: 9px;
+  }
+
+  .date__time {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .materials {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .material__logo img {
+    width: 26px;
+    height: 39px;
+  }
+  .material__name {
+    padding-left: 29px;
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .status__title {
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 2px;
+  }
+  .date_title {
+    font-size: 9px;
+  }
+
+  .date__time {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 925px) {
+  .material {
+    height: 65px;
+  }
+  .material__logo {
+    width: 65px;
+  }
+  .infoBlock {
+    padding: 10px 24px 10px 20px;
+  }
+  .material__logo img {
+    width: 20px;
+    height: 30px;
+  }
+  .material__name {
+    padding-left: 20px;
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .status__title {
+    font-size: 11px;
+    line-height: 11px;
+    padding-bottom: 2px;
+  }
+  .status__variant {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .material__date {
+    display: none;
+  }
+  .info__circle {
+    right: 9px;
+  }
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: GothamBold; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title__name {
+  text-transform: uppercase;
+  font-family: GothamBold;
+  color: #4686cc;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 21px;
+}

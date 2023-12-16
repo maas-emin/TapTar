@@ -1,0 +1,26 @@
+.buttons {
+  padding: 45px 50px;
+  background-color: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  /* backdrop-filter: blur(15px); */
+  border: 2px dashed #9e9e9e;
+  border-radius: 10px;
+}
+
+.buttons__title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #9e9e9e;
+  text-align: center;
+}
+
+.buttons__block {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 892px) {
+  .buttons__block {
+    flex-wrap: wrap;
+  }
+}

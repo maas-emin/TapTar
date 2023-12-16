@@ -1,0 +1,18 @@
+.svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.svg__stroke {
+  stroke: white;
+}
+
+.svg__fill {
+  fill: white;
+}

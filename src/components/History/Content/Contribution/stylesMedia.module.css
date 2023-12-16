@@ -1,0 +1,337 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.main {
+  width: 1070px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.files__header {
+  margin-bottom: 60px;
+}
+
+.files__title {
+  text-transform: uppercase;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 21px;
+  color: #4686cc;
+}
+
+.files-content {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -23px;
+  margin-left: -23px;
+}
+
+/* карточка */
+.block {
+  position: relative;
+  width: 100%;
+  padding-right: 23px;
+  padding-left: 23px;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  margin-bottom: 25px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 250px;
+  background-color: #4686cc;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+.item:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.item:hover .name {
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.item:hover .icons {
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.item:hover .image {
+  opacity: 0.2;
+}
+
+.item:hover .image img {
+  opacity: 0.2;
+}
+
+.item:hover .document {
+  opacity: 0.2;
+}
+
+.item:hover .fileAudio {
+  opacity: 0.2;
+}
+
+.item:hover .video video {
+  opacity: 0.2;
+}
+
+.item:hover .name {
+  opacity: 0.1;
+}
+
+.item:hover .remove {
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.document {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s linear;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.fileAudio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s linear;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.logo {
+  display: block;
+  width: 187px;
+  height: 165px;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.logoAudio {
+  display: block;
+  width: 137px;
+  height: 135px;
+  padding-bottom: 25px;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.logoRoad {
+  display: block;
+  width: 137px;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.image img {
+  display: block;
+  transition: 0.2s linear;
+  image-rendering: pixelated;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.video video {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.2s linear;
+  border-radius: 15px;
+}
+
+.name {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  color: #000;
+  margin-top: 24px;
+}
+
+.icons {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.125rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+  transition: 0.1s linear;
+}
+
+.icons__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 0.02px solid #4686cc;
+  font-size: 1.5rem;
+  transition: 0.1s linear;
+}
+
+.icon:not(:first-child) {
+  margin-left: 7px;
+}
+
+.icon:last-child {
+  border-right: none;
+}
+
+.icon:hover {
+  border: 0.02px solid #fff;
+  background-color: #4686cc;
+  transition: 0.1s linear;
+}
+
+.icon:hover .iconPath {
+  fill: #fff;
+}
+
+.icon:hover .iconStroke {
+  stroke: #fff;
+}
+
+.iconSvg {
+  width: 20px;
+  height: 22px;
+  cursor: pointer;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #fff;
+}
+.iconPath {
+  fill: #4686cc;
+  fill-rule: nonzero;
+  clip-rule: evenodd;
+}
+.iconStroke {
+  stroke: #4686cc;
+}
+
+@media only screen and (min-width: 2000px) {
+  .main {
+    width: 1480px;
+    margin: 0 auto;
+  }
+
+  .block {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  .main {
+    width: 1770px;
+    margin: 0 auto;
+  }
+
+  .block {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  .main {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .block {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .item {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .main {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .item {
+    height: 160px;
+  }
+}

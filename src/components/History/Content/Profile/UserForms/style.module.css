@@ -1,0 +1,47 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.userForms {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.userFormName {
+  width: 100%;
+  margin: 15px 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.userForm {
+  width: 100%;
+  margin: 15px 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.userFormInput {
+  padding: 18.5px 14px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+}
+
+.userFormInput:focus {
+  outline: 1px solid #bed1e6;
+}
+
+.formTitle {
+  padding-bottom: 4px;
+  text-align: center;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  color: #9b9b9b;
+}

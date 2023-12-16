@@ -1,0 +1,97 @@
+@font-face {
+  font-family: GothamBold; /* Имя шрифта */
+  src: url(../../../../../../assets/GothamPro/gothampro_bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+.send {
+  padding-top: 30px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title__name {
+  font-family: GothamBold;
+  color: #4686cc;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 21px;
+}
+
+.title__info {
+  display: flex;
+  align-items: center;
+}
+
+.title__info p {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 17px;
+  color: #9b9b9b;
+  margin-right: 15px;
+}
+
+.input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.label {
+  display: block;
+  width: 41px;
+  height: 20px;
+  background-color: #bed1e6;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #477a8550;
+}
+
+.label::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: #e8f5f7;
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+
+.input:checked + .label:after {
+  left: calc(100% - 5px);
+  transform: translate(-13px, -50%);
+}
+
+.label:active:after {
+  width: 13px;
+}
+
+.input:checked + .label {
+  background-color: #4686cc;
+}
+
+@media only screen and (max-width: 855px) {
+  .title__info p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .title__name {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}

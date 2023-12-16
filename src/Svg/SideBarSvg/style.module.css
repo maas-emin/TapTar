@@ -1,0 +1,21 @@
+.asideSvg {
+  width: 26px;
+  height: 21px;
+}
+
+.linkSvg {
+  width: 26px;
+  height: 21px;
+}
+
+.uploadSvg {
+  width: 28px;
+  height: 23px;
+}
+
+@media only screen and (max-width: 855px) {
+  .uploadSvg {
+    width: 24px;
+    height: 17px;
+  }
+}

@@ -1,0 +1,135 @@
+@font-face {
+  font-family: GothamLight; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_light.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+.form__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.form__title {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 21px;
+}
+.form__input-name {
+  border-radius: 7px;
+  padding: 15px 10px;
+  width: 672px;
+  height: 35px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+  border: none;
+}
+
+.form__input-name:focus {
+  outline: 1px solid rgba(159, 168, 248, 0.7);
+  border-radius: 0;
+}
+
+.form__input-name::placeholder {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #adadad;
+}
+
+.title__info {
+  position: relative;
+  text-align: right;
+  padding-right: 74px;
+  margin-bottom: 8px;
+  font-family: GothamLight;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+.title__info span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.title__info::before {
+  content: '*';
+  color: #ff0000;
+  font-size: 13px;
+  position: absolute;
+  top: -1px;
+  right: 668px;
+}
+
+@media only screen and (max-width: 940px) {
+  .form__title {
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  .form__input-name {
+    width: 580px;
+  }
+
+  .title__info {
+    padding-right: 0px;
+  }
+
+  .title__info::before {
+    content: '*';
+    color: #ff0000;
+    font-size: 13px;
+    position: absolute;
+    top: -1px;
+    right: 595px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .form__input-name {
+    width: 500px;
+  }
+
+  .title__info {
+    font-size: 9px;
+    line-height: 9px;
+  }
+
+  .title__info::before {
+    content: '*';
+    color: #ff0000;
+    font-size: 13px;
+    position: absolute;
+    top: -1px;
+    right: 485px;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .form__title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

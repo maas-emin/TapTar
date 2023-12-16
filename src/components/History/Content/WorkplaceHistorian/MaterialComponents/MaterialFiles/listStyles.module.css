@@ -1,0 +1,307 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+.list__header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 48px;
+  border-bottom: 1px solid #000;
+}
+
+.list__item {
+  padding: 25px 0;
+}
+
+.list__item:last-child {
+  margin-bottom: 0;
+}
+.header__img {
+  width: 45px;
+  height: 36px;
+}
+.list__header p {
+  font-size: 20px;
+  margin-left: 19px;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+.list__content {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -27px;
+  margin-left: -27px;
+}
+
+.block {
+  position: relative;
+  z-index: 1;
+  width: 142px;
+  margin: 0 0 48px 0;
+  margin-right: 27px;
+  margin-left: 27px;
+  /* flex: 0 0 16.666667%;
+  max-width: 16.666667%; */
+}
+
+.item {
+  position: relative;
+  background-color: #4686cc;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.2s linear;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.itemBgFirst {
+  position: absolute;
+  border-radius: 20px;
+  left: -2px;
+  top: -4px;
+  z-index: -1;
+  width: 150px;
+  height: 145px;
+  background-color: #fff;
+}
+
+.itemBgSecond {
+  position: absolute;
+  border-radius: 20px;
+  left: 10px;
+  top: 4px;
+  z-index: -2;
+  width: 148px;
+  height: 148px;
+  background-color: #bed1e6;
+}
+
+.error {
+  display: block;
+  color: red;
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.not__error {
+  display: none;
+}
+
+.item:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.item:hover .name {
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.item:hover .icons {
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.item:hover .image {
+  opacity: 0.2;
+}
+
+.item:hover .image img {
+  opacity: 0.2;
+}
+
+.item:hover .document {
+  opacity: 0;
+}
+
+.item:hover .video video {
+  opacity: 0.2;
+}
+
+.item:hover .name {
+  opacity: 0.1;
+}
+
+.item:hover .remove {
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.image {
+  width: 100%;
+  height: 136px;
+  display: flex;
+  background-color: #fff;
+}
+
+.document {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 136px;
+  transition: 0.2s linear;
+  background-color: #bed1e6;
+}
+
+.logo {
+  display: block;
+  width: 72px;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.logoAudio {
+  display: block;
+  width: 72px;
+  padding-top: 15px;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.logoRoad {
+  display: block;
+  width: 95px;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.video {
+  width: 100%;
+  height: 136px;
+}
+
+.image img {
+  display: block;
+  transition: 0.2s linear;
+  image-rendering: pixelated;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+
+.video video {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.2s linear;
+}
+
+.name {
+  width: 100%;
+  text-align: center;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+  color: #000;
+  padding-top: 35px;
+  transition: 0.2s linear;
+}
+
+.icons {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.125rem;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translateY(-50%);
+  visibility: hidden;
+  transition: 0.1s linear;
+}
+
+.icons__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  cursor: pointer;
+  width: 34px;
+  height: 40px;
+  font-size: 1.5rem;
+  transition: background 0.2s linear, color 0.2s linear;
+}
+
+.icon:not(:first-child) {
+  margin-left: 15px;
+}
+
+.icon:last-child {
+  border-right: none;
+}
+
+.image:not(:last-child) {
+  margin-right: 7px;
+}
+
+.images__group {
+  display: flex;
+  padding: 5px;
+  border: 1px solid black;
+}
+.image__group {
+  display: block;
+  width: 200px;
+  height: 100px;
+}
+.images__group:not(:last-child) {
+  margin-right: 7px;
+}
+
+.remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 6;
+  text-align: center;
+  visibility: hidden;
+}
+
+.svg {
+  cursor: pointer;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #fff;
+  width: 100%;
+  height: 100%;
+}
+.path {
+  fill: #fff;
+  fill-rule: nonzero;
+}

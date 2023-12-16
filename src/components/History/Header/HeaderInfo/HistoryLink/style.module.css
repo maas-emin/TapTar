@@ -1,0 +1,30 @@
+.link {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+.link__icon {
+  width: 40px;
+  height: 40px;
+}
+.link__text {
+  color: white;
+  font-weight: 500;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.link__svg {
+  fill: white;
+}
+
+.link:hover .link__text {
+  color: #4bf5fd;
+}
+
+.link:hover .link__svg {
+  fill: #4bf5fd;
+}

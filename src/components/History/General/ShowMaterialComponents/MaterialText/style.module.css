@@ -1,0 +1,80 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+.form__text {
+  margin-top: 15px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+
+.form__subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form__subtitle p {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 21px;
+}
+
+.form__input-text {
+  width: 100%;
+  height: 317px;
+  font-family: GothamRegular;
+  padding: 17px 19px;
+  font-size: 14px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+  margin-top: 10px;
+  resize: none;
+}
+
+.form__input-text:focus {
+  outline: 1px solid rgba(159, 168, 248, 0.7);
+  border-radius: 0;
+}
+
+.form__input-text::placeholder {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #adadad;
+}
+
+.form__prompt {
+  width: 350px;
+  position: absolute;
+  bottom: -30px;
+  z-index: -2;
+  right: 0;
+}
+
+.form__prompt--selected {
+  width: 100%;
+  font-size: 17px;
+  color: #fff;
+  background-color: rgb(76, 175, 80, 0.7);
+  border: 1px solid rgb(76, 175, 80, 0.5);
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px 0 8px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.form__prompt--selected:hover {
+  background-color: rgb(76, 175, 80, 1);
+  border: 1px solid rgb(76, 175, 80, 0.5);
+  transition: 0.2s ease-in;
+}

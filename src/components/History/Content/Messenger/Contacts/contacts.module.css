@@ -1,0 +1,245 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.container {
+  min-width: 310px;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  position: relative;
+  transition: 300ms;
+  overflow-y: auto;
+}
+
+.contacts__list {
+  padding: 0;
+}
+
+.contacts__link {
+  max-width: 310px;
+  display: block;
+  box-sizing: border-box;
+}
+.contacts__item {
+  height: 71px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+}
+
+.contacts__link:hover {
+  border-right: 8px solid #bed1e6;
+}
+
+.contacts:not(:last-child) {
+  margin-bottom: 1px;
+}
+p {
+  margin: 0;
+}
+a {
+  color: #171717;
+  text-decoration: none;
+}
+.search-block {
+  height: 68px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #f5f5f5;
+  justify-content: center;
+  background-color: #fff;
+}
+.input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 15;
+  width: 240px;
+  border: 1px solid #878787;
+  box-sizing: border-box;
+  border-radius: 23px;
+}
+
+.searchIcon {
+  position: absolute;
+  z-index: 15;
+  left: 10px;
+  width: 16px;
+  height: 17px;
+}
+
+.input input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 23px;
+  outline: none;
+  border: none;
+  padding: 9px 10px 9px 35px;
+}
+
+.reset {
+  z-index: 1000;
+  position: absolute;
+  right: 8px;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: #7d7d7d;
+}
+.messages {
+  font-size: 14px;
+  font-weight: 300;
+}
+.active {
+  color: white;
+  display: block;
+  background-color: #2146e2;
+  border-right: 8px solid #bed1e6;
+}
+.main_contact {
+  overflow-y: scroll;
+  height: 100%;
+}
+.info_block {
+  margin-left: 25px;
+  max-width: 220px;
+}
+
+.new__messages {
+  position: absolute;
+  z-index: 4;
+  right: 15px;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #9b9b9b;
+}
+
+.time {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 12px;
+}
+
+/*** стили для темной темы ***/
+div[name='dark'] .container {
+  transition: 300ms;
+  width: 25%;
+  box-sizing: border-box;
+  background-color: #242424;
+  position: relative;
+  color: white;
+  overflow: scroll;
+}
+div[name='dark'] .contacts:hover {
+  background-color: #4b4b4b;
+}
+div[name='dark'] .active {
+  background-color: rgba(58, 220, 149, 0.58);
+}
+div[name='dark'] a {
+  color: #ffffff;
+  text-decoration: none;
+}
+div[name='dark'] .container input {
+  background-color: #454545;
+  color: white;
+}
+div[name='dark'] .container button {
+  color: darkgrey;
+}
+div[name='dark'] .search-block {
+  background-color: #242424;
+}
+
+/*** конец стилей для темной темы ***/
+
+/*CТИЛИ ДЛЯ ПРЕЛОАДЕРА*/
+.preloader-wrapper {
+  margin-top: 80px;
+}
+.preloader-name {
+  padding-left: 300px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.preloader-div {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1920px) {
+  .preloader-name {
+    padding-left: 300px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .preloader-name {
+    padding-left: 260px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .preloader-name {
+    padding-left: 230px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  input {
+    margin-left: -5px;
+  }
+  .preloader-div {
+    margin-left: 10px;
+  }
+  .preloader-name {
+    padding-left: 190px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .search-block {
+    display: none;
+  }
+  .container {
+    min-width: 250px;
+  }
+  .name {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .info_block {
+    margin-left: 15px;
+    max-width: 150px;
+  }
+}

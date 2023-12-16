@@ -1,0 +1,99 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.changeFile {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileShow {
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #bed1e6;
+  border-radius: 15px;
+}
+
+.oneFile {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oneFile.document {
+  max-width: 100%;
+  width: 122px;
+  height: 173px;
+}
+
+.oneFile.audioPlayer {
+  width: 90%;
+}
+
+.fileShow.audioPlayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 242px;
+}
+
+.fileShow.textarea {
+  height: 350px;
+}
+
+.fileShow.document {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 241px;
+  height: 232px;
+  background: #bed1e6;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+}
+
+.document__item--audio {
+  box-shadow: 0 0 10px 5px rgb(0 0 0 / 17%);
+  height: 80px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.fileShow img {
+  display: block;
+  image-rendering: pixelated;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* text */
+
+.form__input-text {
+  width: 100%;
+  height: 100%;
+  padding: 15px 8px;
+  font-size: 16px;
+  border: none;
+  resize: none;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-family: GothamRegular;
+}
+
+.form__input-text:focus {
+  outline: 1px solid #4686cc;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0;
+}

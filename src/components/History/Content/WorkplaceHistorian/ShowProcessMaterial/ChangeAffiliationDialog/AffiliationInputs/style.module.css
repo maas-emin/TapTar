@@ -1,0 +1,69 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.forms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+.form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.form__input:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form__title {
+  color: #000;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  margin-right: 37px;
+}
+
+.form__input {
+  width: 300px;
+  padding: 11px;
+  border: none;
+  color: #000;
+  height: 36px;
+  background-color: #ffffff;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.form__input:focus {
+  outline: 1px solid #4686cc;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0;
+}
+
+.form__input::placeholder {
+  color: #adadad;
+  line-height: 13px;
+  font-size: 13px;
+}
+@media only screen and (max-width: 1037px) {
+  .forms {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}

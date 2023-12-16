@@ -1,0 +1,54 @@
+.cabinetAudioTop {
+  display: block;
+  width: 137px;
+  height: 135px;
+  padding-bottom: 25px;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.cabinetAudioBottom {
+  display: block;
+  width: 137px;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.materialAudioTop {
+  display: block;
+  width: 72px;
+  padding-top: 15px;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.materialAudioBottom {
+  display: block;
+  width: 95px;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+@media only screen and (max-width: 1100px) {
+  .cabinetAudioTop {
+    width: 87px;
+    height: 80px;
+    padding-bottom: 15px;
+  }
+
+  .cabinetAudioBottom {
+    width: 80px;
+  }
+}

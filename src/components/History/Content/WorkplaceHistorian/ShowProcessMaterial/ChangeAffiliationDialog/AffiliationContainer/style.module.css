@@ -1,0 +1,26 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.form__dialog {
+  position: relative;
+  z-index: 720;
+  width: 1090px;
+  max-width: 100%;
+  height: 88vh;
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 60px 85px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border: 2px dashed #9e9e9e;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1120px) {
+  .form__dialog {
+    width: 100vw;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,145 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+.fails__add-text {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  font-family: GothamRegular;
+  color: #000;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: 0.4s;
+  left: 0;
+  transition: 0.01s ease-in;
+  visibility: hidden;
+}
+
+.fails__add-text--active {
+  opacity: 1;
+  transition: 2s ease-in;
+  left: 0;
+  visibility: visible;
+}
+
+.fails__box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 45px;
+  z-index: 3;
+  margin-left: 20px;
+  overflow: hidden;
+  transition: 0.5s ease-in;
+}
+
+.fails__block {
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(-100%);
+  transition: 0.5s ease-in;
+}
+
+.svg {
+  cursor: pointer;
+}
+.path {
+  display: block;
+  fill: black;
+}
+
+.svg:hover .path {
+  fill: red;
+  transition: 0.3s;
+}
+
+.block__active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 0.5s ease-in;
+}
+
+.uploadInput {
+  display: none;
+}
+
+.block__item {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 188px;
+  height: 40px;
+  background: #bed1e6;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  cursor: pointer;
+}
+.block__item:hover {
+  background-color: #4686cc;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.block__item:hover .list__logo {
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.block__item:not(:last-child) {
+  margin-right: 30px;
+}
+.list__logo {
+  width: 28px;
+  height: 23px;
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.list__logo svg {
+  width: 100%;
+  height: 100%;
+}
+.block__item p {
+  font-family: GothamRegular;
+  font-size: 16px;
+  margin-left: 25px;
+}
+
+@media only screen and (max-width: 940px) {
+  .block__item {
+    width: 165px;
+  }
+
+  .block__item p {
+    font-size: 12px;
+    margin-left: 18px;
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .block__item {
+    width: 140px;
+    height: 35px;
+  }
+  .block__item p {
+    font-size: 10px;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  .block__item {
+    width: 120px;
+    height: 35px;
+  }
+  .block__item p {
+    margin-left: 13px;
+  }
+}

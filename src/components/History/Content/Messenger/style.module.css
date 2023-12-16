@@ -1,0 +1,60 @@
+.messenger {
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container-dark {
+  height: 100vh;
+  background-color: #4c4c4c;
+  display: flex;
+  justify-content: space-between;
+}
+.chat_profile_block {
+  flex: 1;
+  display: flex;
+}
+/** CSS transition **/
+.input-btn.exit-active,
+.input-btn.enter-active {
+  transform: scale(0);
+  transition: 100ms;
+}
+
+.toggle-active-enter,
+.toggle-active-exit,
+.search-btn-active-exit,
+.toggle-theme-active-exit,
+.search-btn-active-enter,
+.toggle-theme-active-enter {
+  transform: scale(1.2);
+  transition: 200ms;
+}
+
+.profile-enter {
+  width: 0;
+  transition: 1000ms;
+}
+.profile-enter-active {
+  width: 25%;
+  transition: 1000ms;
+}
+.profile-exit {
+  width: 25%;
+  transition: 1000ms;
+}
+.profile-exit-active {
+  width: 0;
+  transition: 1000ms;
+}
+
+@media only screen and (max-width: 1000px) {
+  .messenger {
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
+}

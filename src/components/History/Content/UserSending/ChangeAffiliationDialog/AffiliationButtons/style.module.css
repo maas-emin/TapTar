@@ -1,0 +1,69 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog__button {
+  cursor: pointer;
+  width: 268px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #bed1e6;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 21px;
+  margin-top: 15px;
+  transition: 0.05s ease-in;
+  outline: none;
+  z-index: 2;
+}
+
+.dialog__button:not(:first-child) {
+  margin-left: 74px;
+}
+
+.dialog__button:hover {
+  background-color: #4686cc;
+  transition: 0.05s ease-in;
+}
+
+.error {
+  margin-top: 20px;
+  text-align: center;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: rgb(255, 0, 0);
+}
+
+.btn__error {
+  cursor: auto;
+  background-color: #bed1e6;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn__error:hover {
+  background-color: #bed1e6;
+  transition: 0.05s ease-in;
+}

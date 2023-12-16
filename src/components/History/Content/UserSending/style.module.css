@@ -1,0 +1,36 @@
+.send {
+  padding-top: 50px;
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.mainSend {
+  padding-top: 100px;
+  background-color: #fafafa;
+  height: 100vh;
+}
+.containerSkeleton {
+  padding-top: 110px;
+  width: 900px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mainSend {
+    padding-top: 0px;
+    padding-bottom: 100px;
+  }
+  .containerSkeleton {
+    padding-top: 0px;
+    padding-bottom: 110px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .send {
+    padding: 30px 20px 0;
+  }
+}

@@ -1,0 +1,139 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+.auth {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.authLabel {
+  text-transform: capitalize;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+  color: #4686cc;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  display: block;
+}
+
+.authInput {
+  width: 100%;
+  height: 35px;
+  padding: 10px 19px;
+  border: 1px solid #4686cc;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: #4686cc;
+  font-size: 13px;
+}
+
+.authInput:focus {
+  outline: none;
+}
+
+.authInput::placeholder {
+  color: rgba(70, 134, 204, 0.3);
+  font-size: 15px;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.socialTitle {
+  text-align: center;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  color: #0066ff;
+  margin-top: 50px;
+}
+
+.authIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.05s ease;
+  cursor: pointer;
+}
+
+.authIcon:hover {
+  transform: scale(1.1);
+  transition: all 0.05s ease;
+}
+
+.authIcon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.auth button {
+  display: block;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  padding: 9px 25px;
+  border: none;
+  margin: 27px auto 0;
+  background-color: #4382c8;
+  border-radius: 29px;
+  transition: all 0.5s ease, top 0.5s ease 0.5s, height 0.5s ease 0.5s,
+    background-color 0.5s ease 0.75s;
+  cursor: pointer;
+}
+
+.auth button:hover {
+  box-shadow: inset 0 0 6px 2px rgba(0, 0, 0, 0.5);
+}
+
+.auth button:active {
+  box-shadow: inset 0 0 6px 2px rgba(0, 0, 0, 0.5);
+}
+
+.forgot {
+  text-align: right;
+  cursor: pointer;
+  transition: 0.05s ease;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #8abdf6;
+}
+.forgot:hover {
+  color: #0066ff;
+  transition: 0.05s ease;
+}
+
+.error {
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #0066ff;
+}

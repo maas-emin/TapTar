@@ -1,0 +1,19 @@
+.linkSvg {
+  position: absolute;
+  z-index: 2;
+  left: 24px;
+  width: 26px;
+  height: 29px;
+}
+
+.linkSvgMedium {
+  position: absolute;
+  z-index: 2;
+  left: 24px;
+  width: 32px;
+  height: 24px;
+}
+
+.active {
+  border-right: 8px solid #bed1e6;
+}

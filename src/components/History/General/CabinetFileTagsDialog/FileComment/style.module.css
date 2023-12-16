@@ -1,0 +1,30 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.comment {
+  width: 100%;
+}
+.comment__title {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  color: #4f4f4f;
+  font-size: 20px;
+  margin-bottom: 34px;
+}
+
+.comment__text {
+  word-wrap: break-word;
+  width: 100%;
+  color: #000;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.comment__text:focus {
+  outline: none;
+}

@@ -1,0 +1,59 @@
+.material {
+  background-color: #fafafa;
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.material__send {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  height: 100%;
+  overflow-y: auto;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.material__buttons {
+  min-width: 450px;
+  height: 100%;
+  padding: 30px 15px 50px;
+  overflow-y: auto;
+  margin-right: 52px;
+}
+
+@media only screen and (max-width: 1470px) {
+  .material__buttons {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  .material__buttons {
+    width: 450px;
+    height: auto;
+    overflow-y: visible;
+    margin-right: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .material {
+    padding: 0 0 100px 0;
+  }
+  .material__send {
+    padding: 30px 30px;
+  }
+  .containerSkeleton {
+    padding: 0 30px 100px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .send {
+    padding: 30px 20px 0;
+  }
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.dialog__effects {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.effect {
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.effect:not(:last-child) {
+  margin-right: 34px;
+}
+
+.effectSubtitle {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  color: #4382c8;
+  margin-top: 14px;
+}

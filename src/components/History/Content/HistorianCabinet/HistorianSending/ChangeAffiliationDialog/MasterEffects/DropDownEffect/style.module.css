@@ -1,0 +1,139 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.triangle {
+  position: absolute;
+  z-index: 3;
+  bottom: -26px;
+  left: 35px;
+  width: 30px;
+  height: 30px;
+}
+
+.triangle svg {
+  width: 100%;
+  height: 100%;
+}
+
+.effectBlock {
+  cursor: default;
+  padding: 10px 21px 20px;
+  position: absolute;
+  z-index: 3;
+  left: -14px;
+  top: -273px;
+  border-radius: 15px;
+  border: 0.3px solid #ffffff;
+  background-color: #bed1e6;
+}
+
+.effectBlock.active {
+  top: -303px;
+}
+
+.effectHeader {
+  display: flex;
+  align-items: center;
+}
+
+.effectCommentBlock {
+  width: 215px;
+}
+.effectImg {
+  width: 19px;
+  height: 20px;
+  margin-right: 7px;
+}
+.effectImg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.effectMainImg {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+}
+.effectMainImg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.effectTitle {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.effectTextarea {
+  width: 100%;
+  height: 150px;
+  margin: 13px 0 8px;
+}
+
+.effectComment {
+  width: 100%;
+  height: 100%;
+  padding: 10px 12px;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #4382c8;
+  resize: none;
+  border-radius: 10px;
+  background-color: #fff;
+  border: none;
+}
+
+.effectComment:focus {
+  outline: none;
+}
+
+.effectComment::placeholder {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #adadad;
+}
+
+.effectBtn {
+  width: 100%;
+  cursor: pointer;
+  background-color: #bed1e6;
+  border: 0.3px solid #ffffff;
+  border-radius: 10px;
+  color: #fff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  display: block;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 4px 0;
+  transition: 0.05s all ease;
+  outline: none;
+  z-index: 2;
+}
+
+.effectBtn:hover {
+  border: 0.3px solid #4382c8;
+  background-color: #4382c8;
+  transition: 0.05s all ease;
+}
+.effectBtn:not(:last-child) {
+  margin-bottom: 8px;
+}

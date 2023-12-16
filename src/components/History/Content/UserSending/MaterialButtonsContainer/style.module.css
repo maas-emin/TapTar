@@ -1,0 +1,68 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+.fails__add {
+  display: flex;
+  align-items: center;
+}
+
+.fails__addSpace {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  margin-top: 65px;
+}
+
+.fails__add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.rotate {
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  transform: rotate(135deg);
+  transition: 0.5s ease-in;
+}
+
+.norotate {
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in;
+}
+
+.fails__add-text {
+  visibility: hidden;
+  font-family: GothamRegular;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: 0.4s;
+}
+
+.fails__add-text--active {
+  visibility: visible;
+  transition: 0.5s ease-in;
+}

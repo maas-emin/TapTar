@@ -1,0 +1,66 @@
+.fails__list {
+  list-style-type: none;
+  padding-top: 30px;
+  visibility: visible;
+  transition: 0.5s;
+}
+.list__active {
+  visibility: hidden;
+  display: none;
+  transition: 0.5s;
+}
+.list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.list__header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.list__header:hover {
+  background-color: #a1bfc0;
+  transition: 0.3s;
+}
+.list__item:last-child {
+  margin-bottom: 0;
+}
+.list__header img {
+  width: 50px;
+}
+.list__header p {
+  font-size: 20px;
+  margin-left: 7px;
+}
+.list__content {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  height: 100px;
+}
+
+.image:not(:last-child) {
+  margin-right: 7px;
+}
+
+.images__group {
+  display: flex;
+  padding: 5px;
+  border: 1px solid black;
+}
+.image__group {
+  display: block;
+  width: 200px;
+  height: 100px;
+}
+.images__group:not(:last-child) {
+  margin-right: 7px;
+}

@@ -1,0 +1,575 @@
+@font-face {
+  font-family: GothamRegular; /* Имя шрифта */
+  src: url(../../../../../../assets/GothamPro/gothampro_medium.ttf); /* Путь к файлу со шрифтом  */
+}
+
+.master__main {
+  width: 1070px;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow-y: auto;
+  padding-top: 146px;
+  padding-bottom: 40px;
+  background-color: #fff;
+}
+
+.master {
+  display: flex;
+  justify-content: space-between;
+}
+
+.master.origin__document {
+  justify-content: center;
+}
+
+.master.origin__audio {
+  justify-content: space-between;
+}
+
+.master__title {
+  text-transform: uppercase;
+  padding-bottom: 46px;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 21px;
+  color: #4686cc;
+}
+.original {
+  width: 650px;
+  padding: 5px;
+}
+.original.origin__document {
+  width: 350px;
+  padding: 5px;
+}
+
+.original.origin__audio {
+  width: 650px;
+  padding: 5px;
+}
+
+.original.origin__text {
+  width: 500px;
+}
+
+.original__title {
+  width: 100%;
+  padding-bottom: 18px;
+  text-align: center;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 21px;
+  color: #676767;
+}
+
+.original__tusks {
+  width: 100%;
+  margin-top: 95px;
+}
+
+.original__tusks.origin__document {
+  width: 100%;
+}
+
+.original__tusks.origin__audio {
+  width: 100%;
+}
+
+.tasks {
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.tasks__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 58px;
+}
+
+.tasks__img {
+  display: block;
+  width: 33px;
+  height: 34px;
+}
+
+.tasks__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tasks__title {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+  color: #4382c8;
+  margin-top: 14px;
+  margin-bottom: 17px;
+}
+
+.tasks__comment {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  color: #7d7d7d;
+}
+
+.original__file {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.original__file.origin__document {
+  width: 100%;
+  padding: 75px;
+  height: 350px;
+}
+
+.original__file.origin__audio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.original__file.origin__text {
+  height: 400px;
+  padding: 30px;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  overflow: auto;
+}
+
+.original__file img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.document__link {
+  margin-top: 15px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.document__link:hover .link__text {
+  color: #4382c8;
+}
+
+.document__link:hover .link__path {
+  fill: #4382c8;
+}
+
+.link__text {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+  color: #676767;
+}
+
+.link__logo {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+.link__logo svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.link__path {
+  fill: #676767;
+}
+
+.btn__delete {
+  cursor: pointer;
+  margin-top: 15px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.btn__delete:hover .delete__text {
+  color: #4382c8;
+}
+
+.btn__delete:hover .link__path {
+  fill: #4382c8;
+}
+
+.delete__text {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+  color: #676767;
+}
+
+.delete__logo {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+.delete__logo svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.link__path {
+  fill: #676767;
+}
+
+.processed {
+  width: 350px;
+  padding: 5px;
+}
+
+.processed.origin__document {
+  width: 350px;
+  margin-left: 30px;
+}
+
+.processed.origin__audio {
+  width: 350px;
+  padding: 5px;
+}
+
+.processed.origin__text {
+  width: 500px;
+  padding: 5px;
+}
+
+.processed__file {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+}
+
+.processed__textarea {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border: none;
+  resize: none;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.processed__textarea:focus {
+  outline: 1px solid #4382c8;
+}
+
+.processed__textarea::placeholder {
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #adadad;
+}
+
+.processed__file.origin__document {
+  height: 350px;
+  padding: 75px;
+}
+
+.processed__file.origin__audio {
+  width: 100%;
+  height: 400px;
+}
+
+.processed__add {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.processed__add svg {
+  display: block;
+  width: 100px;
+  height: 100px;
+  font-weight: 100;
+}
+
+.processed__input {
+  display: none;
+}
+
+.buttons {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.buttons.origin__text {
+  margin-top: 95px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.processed__button {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  overflow: hidden;
+  color: #5b5b5b;
+  padding: 0 10px;
+}
+
+.processed__button.origin__text {
+  width: 225px;
+}
+
+.processed__button::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 13px;
+  height: 100%;
+  background-color: #fff40c;
+}
+
+.processing__button {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 30px;
+  color: #5b5b5b;
+  margin-bottom: 15px;
+}
+
+.processing__button.origin__text {
+  margin-right: auto;
+  width: 225px;
+  margin-bottom: 0;
+}
+
+.processing__button::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 13px;
+  height: 100%;
+  background-color: #04c800;
+}
+
+.delete__button {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  width: 100%;
+  color: #5b5b5b;
+  height: 60px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  font-family: GothamRegular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.delete__button.origin__text {
+  /* margin-right: auto; */
+  width: 225px;
+}
+
+.delete__button::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 13px;
+  height: 100%;
+  background-color: #ff0000;
+}
+
+.disabled {
+  display: none;
+}
+
+/* Прелоадер */
+.loader {
+  background-color: #00355f;
+  width: 100vw;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader__card {
+  width: 350px;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader__box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(248, 159, 159, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  /* backdrop-filter: blur(15px); */
+  border: 1px solid rgba(248, 159, 159, 0.5);
+  z-index: 40;
+  border-radius: 10px;
+}
+
+.loader__title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.loader__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.loader__dots span {
+  display: block;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.loader__box span:not(:first-child) {
+  margin-left: 10px;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(5px);
+  }
+}
+
+.loader__dots span:nth-child(1) {
+  background-color: #db4437;
+  animation: move 2s linear infinite;
+  animation-delay: 0.1s;
+}
+
+.loader__dots span:nth-child(2) {
+  background-color: #f4b400;
+  animation: move 2s linear infinite;
+  animation-delay: 0.3s;
+}
+
+.loader__dots span:nth-child(3) {
+  background-color: #4285f4;
+  animation: move 2s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.loader__dots span:nth-child(4) {
+  background-color: #0f9d58;
+  animation: move 2s linear infinite;
+  animation-delay: 0.7s;
+}
